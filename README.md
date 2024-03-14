@@ -19,32 +19,32 @@ xRayImages is a solution if you need to implement a moving image on top of anoth
 
 ## Example usage
 
-```React
-  import { useState } from 'react';
-  import { XRayContainer, XRaySlider} from 'xrayimages'
-  import backgroundImage from './assets/backgroundImage.jpg'
-  import xrayImage from './assets/xrayImage.jpg'
+```React.js
+import { useState } from 'react';
+import { XRayContainer, XRaySlider} from 'xrayimages'
+import backgroundImage from './assets/backgroundImage.jpg'
+import xrayImage from './assets/xrayImage.jpg'
 
-  function App() {
+function App() {
   const [sliderPosition, setSliderPosition] = useState(0)
 
   return (
     <>
-        <XRayContainer
-            sliderPosition={sliderPosition}
-            backgroundImage={backgroundImage}
-            xrayImage={xrayImage}
-        />
-        <XRaySlider
-            sliderPosition={sliderPosition}
-            setSliderPosition={setSliderPosition}
-        />
+      <XRayContainer
+        sliderPosition={sliderPosition}
+        backgroundImage={backgroundImage}
+        xrayImage={xrayImage}
+      />
+      <XRaySlider
+        sliderPosition={sliderPosition}
+        setSliderPosition={setSliderPosition}
+      />
     </>
   )
 }
 ```
 
-### Components props <XRayContainer />
+### XRayContainer props
 
 | Prop | Type | Description | Example |
 |------|------|-------------|---------|
@@ -58,7 +58,7 @@ xRayImages is a solution if you need to implement a moving image on top of anoth
 | backdrop?=0 | number | Darkening the full background | backdrop={0.4} |
 | ...props | | Residual props such as className, style and others |
 
-### Components props <XRaySlider />
+### XRaySlider props
 
 | Prop | Type | Description | Example |
 |------|------|-------------|---------|
