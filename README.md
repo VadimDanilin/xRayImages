@@ -1,6 +1,6 @@
 # xRayImages
 
-xRayImages is a solution if you need to implement a moving image on top of another using a slider.
+xRayImages is a React library for moving an image on top of another using a slider.
 
 ## Screenshot
 
